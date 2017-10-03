@@ -19,6 +19,10 @@ hints:
   DockerRequirement:
     dockerPull: cosmic-extract:latest
 baseCommand: harvest-all.sh
+requirements:
+  EnvVarRequirement:
+    envDef:
+      MOLECULAR_MATCH_API_KEY: XXXXXXXXXX
 inputs:
   /root/.synapseCache/.session:
     type: File
